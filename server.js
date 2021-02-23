@@ -3,7 +3,7 @@ const app = express();
 
 app.route('/')
   .all((req, res) => {
-    res.send(`username: ${process.env.USERNAME} password: ${process.env.PASSWORD}`);
+    res.send(`secrets: ${process.env.USERNAME}`)
   });
 
 app.listen(7244, () => console.log('server up on port 7244'));
