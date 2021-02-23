@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::922141435809:role/ecs_role",
+  "executionRoleArn": "arn:aws:iam::922141435809:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -46,7 +46,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "922141435809.dkr.ecr.eu-central-1.amazonaws.com/node-test:fa6bdfdde6b768ba2bb1bc947907f0436d80aa19",
+      "image": "922141435809.dkr.ecr.eu-central-1.amazonaws.com/node-test:33c0a10da0a6e7e00e3dd0062a9a6119fea841e1",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -68,12 +68,12 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::922141435809:role/ecs_role",
+  "taskRoleArn": "arn:aws:iam::922141435809:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-central-1:922141435809:task-definition/node-test:6",
+  "taskDefinitionArn": "arn:aws:ecs:eu-central-1:922141435809:task-definition/node-test:8",
   "family": "node-test",
   "requiresAttributes": [
     {
@@ -137,7 +137,7 @@
   ],
   "networkMode": "awsvpc",
   "cpu": "256",
-  "revision": 6,
+  "revision": 8,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
