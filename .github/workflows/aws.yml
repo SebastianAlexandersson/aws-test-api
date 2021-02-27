@@ -75,6 +75,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: test
-        cluster: serverless
+        service: node-test
+        cluster: fargate
         wait-for-service-stability: true
